@@ -1,0 +1,48 @@
+# PaperAntiCheat 配置文件
+# 所有检测模块的开关和阈值设置
+
+# 移动检测配置
+movement:
+  enabled: true
+  flying:
+    enabled: true
+    max-flight-time: 1000  # 最大飞行时间（毫秒）
+    vertical-threshold: 0.5  # 垂直移动阈值
+  speed:
+    enabled: true
+    max-speed: 6.0  # 最大移动速度
+    check-interval: 20  # 检查间隔（ticks）
+
+# 战斗检测配置  
+combat:
+  enabled: true
+  killaura:
+    enabled: true
+    max-cps: 12  # 最大点击次数每秒
+    min-attack-cooldown: 100  # 最小攻击冷却（毫秒）
+  reach:
+    enabled: true
+    max-reach: 3.5  # 最大攻击距离
+    tolerance: 0.1  # 容差值
+
+# 客户端验证配置
+client:
+  enabled: true
+  whitelist-mods: []  # 允许的Mod列表
+  strict-mode: false  # 严格模式（会阻止所有Mod）
+
+# 数据库配置
+database:
+  enabled: false  # 启用数据库记录（需要SQLite支持）
+  # 注意：启用数据库需要在build.gradle中添加SQLite依赖
+
+# 日志和通知配置
+logging:
+  log-violations: true
+  broadcast-violations: false
+  log-level: "WARNING"
+
+# 管理员权限
+permissions:
+  admin: "anticheat.admin"
+  bypass: "anticheat.bypass"

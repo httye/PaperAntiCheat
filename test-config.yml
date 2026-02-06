@@ -1,0 +1,41 @@
+# 测试配置文件 - 用于验证反作弊功能
+
+# 启用所有检测模块进行测试
+movement:
+  enabled: true
+  flying:
+    enabled: true
+    max-flight-time: 500  # 缩短测试时间
+    vertical-threshold: 0.3
+  speed:
+    enabled: true
+    max-speed: 5.0
+    check-interval: 10
+
+combat:
+  enabled: true
+  killaura:
+    enabled: true
+    max-cps: 8  # 降低阈值便于测试
+    min-attack-cooldown: 125
+  reach:
+    enabled: true
+    max-reach: 3.2
+    tolerance: 0.05
+
+client:
+  enabled: true
+  whitelist-mods: []
+  strict-mode: false
+
+database:
+  enabled: true  # 启用数据库记录测试
+
+logging:
+  log-violations: true
+  broadcast-violations: true  # 启用广播便于观察
+  log-level: "INFO"
+
+permissions:
+  admin: "anticheat.admin"
+  bypass: "anticheat.bypass"
