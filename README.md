@@ -1,4 +1,5 @@
 # PaperAntiCheat - Minecraft Paper 服务器反作弊插件
+[![Build PaperAntiCheat](https://github.com/httye/PaperAntiCheat/actions/workflows/build.yml/badge.svg?event=check_run)](https://github.com/httye/PaperAntiCheat/actions/workflows/build.yml)
 
 一个基于AI和行为分析的Minecraft Paper服务器反作弊插件，提供全面的作弊检测功能。
 
